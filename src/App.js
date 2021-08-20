@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Landing from "./components/Landing";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./App.css";
 
 function App() {
+  const [sesion, setSesion] = useState(false);
+  const [modalLoginStatus, setModalLoginStatus] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Switch>
+          <Route path="/">
+            <Landing
+              sesion={sesion}
+              userPic={userPic}
+              loginModalShow={loginModalShow}
+              setLoginModalShow={setLoginModalShow}
+            />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
