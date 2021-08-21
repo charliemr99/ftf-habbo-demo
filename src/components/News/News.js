@@ -47,8 +47,8 @@ export default function News() {
           </div>
           <div className="card__body">
             <p>
-              Protect yourself with awareness! Learn how to
-              <strong>stay safe on the internet.</strong>
+              Protect yourself with awareness! Learn how to{" "}
+              <strong>stay safe on the internet. </strong>
             </p>
           </div>
         </div>
@@ -59,8 +59,10 @@ export default function News() {
           <div className="card__body">
             <p>
               Curious about the effective tools that ensure our users can have
-              fun in a safe environment? See our
-              <strong>Parents' Guide on the Customer Support & Helpdesk</strong>
+              fun in a safe environment? See our{" "}
+              <strong>
+                Parents' Guide on the Customer Support & Helpdesk{" "}
+              </strong>
               pages.
             </p>
           </div>
