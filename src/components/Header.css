@@ -31,7 +31,7 @@
 }
 
 .inputs-login__inputs {
-  width: 50%;
+  width: 60%;
   height: 100%;
   display: flex;
   justify-content: space-around;
@@ -40,8 +40,8 @@
 
 .inputs-login__inputs input {
   padding: 10px;
+  width: 45%;
   background-color: #ccd8df;
-  border: 1px solid var(--ligth-blue);
   border-radius: 5px;
   outline: none;
 }

@@ -1,12 +1,16 @@
 import React from "react";
 import Header from "./Header";
+import Nav from "./Nav/Nav";
 import Footer from "./Footer";
 
-const Landing = (props) => {
+const Landing = ({ registerModal, setRegisterModal }) => {
   return (
     <>
-      <Header props={props} />
-
+      <Header
+        registerModal={registerModal}
+        setRegisterModal={setRegisterModal}
+      />
+      <Nav />
       <Footer />
     </>
   );

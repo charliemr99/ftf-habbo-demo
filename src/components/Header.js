@@ -4,10 +4,10 @@ import React from "react";
 import iconFacebook from "../assets/icons/facebook.svg";
 
 // Styles
-import "./Variables.css";
-import "./Header.css";
+import "./variables.css";
+import "./header.css";
 
-export default function Header(props) {
+export default function Header({ setRegisterModal }) {
   return (
     <div className="header-container">
       <div className="header-container__login">
@@ -20,7 +20,7 @@ export default function Header(props) {
               placeholder="Email"
             />
             <input
-              type="text"
+              type="Password"
               name="inputPassword"
               id="inputPassword"
               placeholder="Password"
@@ -50,7 +50,7 @@ export default function Header(props) {
             <div className="container-info__button">
               <span
                 onClick={() => {
-                  props.setRegisterModal(true);
+                  setRegisterModal(true);
                 }}
               >
                 JOIN FOR FREE
