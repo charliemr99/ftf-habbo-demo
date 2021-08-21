@@ -2,7 +2,7 @@
 
 tft-habbo-demo is a webpage for an update of the popular game Habbo, in Virtual Reality. Integrated with Nautilus, a 3D web engine based on Three.js.
 
-The 3D model on the web page is draggable, includes a preview room with no textures and a animated horse.
+The 3D model on the web page is draggable and rotative, includes a preview room with no textures and an animated horse.
 
 This site can also be viewed on (https://ftf-habbo-demo.web.app).
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -12,6 +12,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you can run:
 
 ### `yarn start`
+(Make sure you have installed previouslly the dependencies with `yarn`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
