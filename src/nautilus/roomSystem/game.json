@@ -1,0 +1,75 @@
+{
+  "name": "landingRoom",
+  "import": [
+    {
+      "name": "RigHorse",
+      "url": "/assets/RigHorse.gltf",
+      "types": ["geometry", "material", "animation", "image"]
+    },
+    {
+      "name": "Hotel",
+      "url": "/assets/Hotel.gltf",
+      "types": ["geometry", "material", "animation", "image"]
+    }
+  ],
+  "metadata": { "type": "App" },
+  "project": {
+    "shadows": true,
+    "shadowType": 1,
+    "vr": false,
+    "physicallyCorrectLights": false,
+    "toneMapping": 0,
+    "toneMappingExposure": 1
+  },
+  "camera": {
+    "metadata": {
+      "version": 4.5,
+      "type": "Object",
+      "generator": "Object3D.toJSON"
+    },
+    "object": {
+      "uuid": "2751D47B-333F-45DB-9D4A-6FCF0FFE5413",
+      "type": "PerspectiveCamera",
+      "name": "Camera",
+      "layers": 1,
+      "matrix": [
+        1, 0, 0, 0, 0, 0.894427, -0.447214, 0, 0, 0.447214, 0.894427, 0, 0, 5,
+        10, 1
+      ],
+      "fov": 50,
+      "zoom": 1,
+      "near": 0.01,
+      "far": 1000,
+      "focus": 10,
+      "aspect": 1.459459,
+      "filmGauge": 35,
+      "filmOffset": 0
+    }
+  },
+  "scene": {
+    "metadata": {
+      "version": 4.5,
+      "type": "Object",
+      "generator": "Object3D.toJSON"
+    },
+    "object": {
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "type": "Scene",
+      "name": "Scene",
+      "layers": 1,
+      "matrix": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]
+    }
+  },
+  "images": {},
+  "textures": {},
+  "materials": {},
+  "geometries": {},
+  "scripts": [
+    { "name": "ImportAnimations" },
+    { "name": "SetUp" },
+    { "name": "RotacionVertical" },
+    { "name": "Horse" }
+  ],
+  "audio": {},
+  "externalData": "{}"
+}
