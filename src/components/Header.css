@@ -195,7 +195,7 @@
 
 .habbo-logo {
   position: absolute;
-  bottom: 90px;
+  bottom: 190px;
   left: 35px;
   width: 300px;
   z-index: 1000;
@@ -242,7 +242,7 @@
 
   .habbo-logo {
     position: absolute;
-    bottom: 90px;
+    bottom: 190px;
     left: 50%;
     transform: translateX(-50%);
     width: 300px;
