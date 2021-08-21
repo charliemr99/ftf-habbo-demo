@@ -111,7 +111,7 @@ export default function Header({ setRegisterModal }) {
         <div
           className="nautilus"
           ref={roomContainer}
-          style={{ width: "50vw", minHeight: "600px" }}
+          style={{ width: "50vw", minHeight: "300px" }}
         ></div>
         <div className="info">
           <div className="container-info">

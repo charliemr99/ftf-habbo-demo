@@ -102,3 +102,9 @@
     top: 50%;
   }
 }
+
+@media (min-width: 319px) and (max-width: 766px) {
+  .container-register-modal {
+    width: 90%;
+  }
+}

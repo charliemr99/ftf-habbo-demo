@@ -241,10 +241,10 @@
   }
 
   .habbo-logo {
-    position: absolute;
-    bottom: 190px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: 130px;
+    position: initial;
+    bottom: auto;
+    left: auto;
     width: 300px;
     z-index: 1000;
   }
