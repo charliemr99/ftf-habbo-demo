@@ -2,43 +2,102 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-register-modal {
+  width: 50%;
+  height: 400px;
+  padding: 20px;
+  background-color: var(--dark-blue);
+  position: absolute;
+  left: 50%;
+  animation: showModal 0.5s ease-in-out forwards;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inputs-register__inputs {
+  width: 100%;
+  height: 70%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.inputs-register__inputs .close-modal {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.inputs-register__inputs .close-modal img {
+  width: 40px;
+  cursor: pointer;
+}
+
+.inputs-register__inputs .item-modal {
+  width: 60%;
+  margin: 30px auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.inputs-register__inputs .item-modal label {
+  font-family: var(--font-title);
+  color: var(--light);
+  letter-spacing: 1px;
 }
 
-.container-register-modal {
-  width: 60%;
-  height: 60%;
-  background-color: var(--ligth-blue);
+.inputs-register__inputs .item-modal input {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  background-color: transparent;
+  font-family: var(--font-text);
+  color: var(--light);
+  letter-spacing: 2px;
+  outline: none;
+  box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
+.inputs-register__inputs .item-modal input:focus {
+  border-bottom: 2px solid var(--ligth-blue);
+}
+
+.inputs-register__btn {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.inputs-register__btn span {
+  width: 70%;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #258fcc;
+  background-color: #0f7dbc;
+  box-sizing: border-box;
+  color: var(--light);
+  font-family: var(--font-title);
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.inputs-register__btn span:hover {
+  background-color: #2a9cde;
+}
+
+@keyframes showModal {
   from {
-    transform: rotate(0deg);
+    top: -100%;
   }
   to {
-    transform: rotate(360deg);
+    top: 50%;
   }
 }
