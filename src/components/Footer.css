@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: var(--dark-blue);
+  background-color: #001726;
 }
 
 .footer-container__social-links {
@@ -47,4 +47,16 @@
 
 .footer-container__footer-links span:last-of-type {
   color: var(--grey);
+}
+
+@media (min-width: 319px) and (max-width: 766px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-container__social-links,
+  .footer-container__footer-links,
+  .footer-container__company-logo {
+    width: 100%;
+  }
 }

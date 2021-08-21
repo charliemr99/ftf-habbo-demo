@@ -33,3 +33,11 @@
 .container-modal__nav:last-of-type {
   margin-right: 10px;
 }
+
+@media (min-width: 319px) and (max-width: 991px) {
+  .container-modal {
+    height: 80px;
+    padding: 10px;
+    overflow: auto;
+  }
+}

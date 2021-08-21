@@ -30,6 +30,27 @@
   box-sizing: border-box;
 }
 
+.inputs-login__responsive {
+  width: 100%;
+  padding: 10px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.inputs-login__responsive span {
+  width: 80%;
+  padding: 15px;
+  font-family: var(--font-title);
+  color: var(--light);
+  letter-spacing: 1px;
+  background-color: var(--ligth-blue);
+  border-radius: 5px;
+  border: 1px solid var(--light);
+  box-sizing: border-box;
+}
+
 .inputs-login__inputs {
   width: 60%;
   height: 100%;
@@ -170,4 +191,61 @@
 
 .header-container__info .info .container-info__button span:hover {
   background-color: #00ab54;
+}
+
+.habbo-logo {
+  position: absolute;
+  bottom: 90px;
+  left: 35px;
+  width: 300px;
+  z-index: 1000;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 319px) and (max-width: 766px) {
+  .header-container {
+    height: auto;
+  }
+
+  .inputs-login__responsive {
+    display: flex;
+  }
+
+  .header-container__login .social-network,
+  .header-container__login .inputs-login {
+    display: none;
+  }
+
+  .header-container__info {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .header-container__info .nautilus {
+    width: 99vw !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-container__info .info {
+    width: 100%;
+  }
+
+  .header-container__info .info .container-info {
+    width: 100%;
+  }
+
+  .habbo-logo {
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    z-index: 1000;
+  }
 }

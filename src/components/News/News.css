@@ -177,3 +177,39 @@
 .aside .card__body p strong {
   color: var(--light);
 }
+
+@media (min-width: 319px) and (max-width: 990px) {
+  .main {
+    width: 100%;
+  }
+
+  .main__title {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .main__image {
+    height: 150px;
+    background-position: right;
+  }
+
+  .main__image .title,
+  .main__image .date,
+  .main__image .info {
+    display: none;
+  }
+
+  .main__news {
+    grid-template-columns: 1fr;
+  }
+
+  .aside {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+  .main__image {
+    height: 300px;
+  }
+}
