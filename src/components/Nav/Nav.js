@@ -5,7 +5,7 @@ import iconMoney from "../../assets/icons/money.svg";
 import iconInfo from "../../assets/icons/informacion.svg";
 import iconCommunity from "../../assets/icons/community.svg";
 
-import "./nav.css";
+import "./Nav.css";
 
 function Nav() {
   return (

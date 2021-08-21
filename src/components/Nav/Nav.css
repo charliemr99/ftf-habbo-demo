@@ -1,0 +1,35 @@
+.container-modal {
+  width: 100%;
+  height: 70px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  background-color: var(--light);
+  box-sizing: border-box;
+}
+
+.container-modal__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-modal__nav img {
+  width: 30px;
+  margin-right: 15px;
+}
+
+.container-modal__nav span {
+  font-family: var(--font-title);
+  font-size: 27px;
+  color: var(--dark-blue);
+  cursor: pointer;
+}
+
+.container-modal__nav span:hover {
+  color: #999;
+}
+
+.container-modal__nav:last-of-type {
+  margin-right: 10px;
+}

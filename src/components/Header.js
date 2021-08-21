@@ -4,8 +4,8 @@ import React from "react";
 import iconFacebook from "../assets/icons/facebook.svg";
 
 // Styles
-import "./variables.css";
-import "./header.css";
+import "./Variables.css";
+import "./Header.css";
 
 export default function Header({ setRegisterModal }) {
   return (
